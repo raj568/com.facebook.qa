@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="FaceBook App Regression Test Suite" duration-ms="42344" started-at="2020-05-15T04:40:35Z" finished-at="2020-05-15T04:41:17Z">
+    <groups>
+    </groups>
+    <test name="Regression Functional Test" duration-ms="42344" started-at="2020-05-15T04:40:35Z" finished-at="2020-05-15T04:41:17Z">
+      <class name="com.facebook.qa.test.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.facebook.qa.test.HomePageTest@5e3a8624]" name="setUp" is-config="true" duration-ms="13362" started-at="2020-05-15T04:40:35Z" finished-at="2020-05-15T04:40:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.facebook.qa.test.LoginPageTest@1bce4f0a]" name="setUp" is-config="true" duration-ms="9813" started-at="2020-05-15T04:40:48Z" finished-at="2020-05-15T04:40:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUserNameTest()[pri:1, instance:com.facebook.qa.test.HomePageTest@5e3a8624]" name="verifyUserNameTest" duration-ms="1780" started-at="2020-05-15T04:40:58Z" finished-at="2020-05-15T04:41:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserNameTest -->
+        <test-method status="FAIL" signature="verifyHomePageTitleTest()[pri:2, instance:com.facebook.qa.test.HomePageTest@5e3a8624]" name="verifyHomePageTitleTest" duration-ms="15" started-at="2020-05-15T04:41:00Z" finished-at="2020-05-15T04:41:00Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Facebook - Log In or Sign Up] but found [(3) Facebook]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Facebook - Log In or Sign Up] but found [(3) Facebook]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.facebook.qa.test.HomePageTest.verifyHomePageTitleTest(HomePageTest.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.facebook.qa.test.HomePageTest@5e3a8624]" name="tearDown" is-config="true" duration-ms="687" started-at="2020-05-15T04:41:15Z" finished-at="2020-05-15T04:41:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.facebook.qa.test.LoginPageTest@1bce4f0a]" name="tearDown" is-config="true" duration-ms="734" started-at="2020-05-15T04:41:16Z" finished-at="2020-05-15T04:41:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.facebook.qa.test.HomePageTest -->
+      <class name="com.facebook.qa.test.LoginPageTest">
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.facebook.qa.test.LoginPageTest@1bce4f0a]" name="verifyLoginPageTitleTest" duration-ms="1683" started-at="2020-05-15T04:40:58Z" finished-at="2020-05-15T04:40:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="verifySignupLinkTest()[pri:2, instance:com.facebook.qa.test.LoginPageTest@1bce4f0a]" name="verifySignupLinkTest" duration-ms="1562" started-at="2020-05-15T04:41:00Z" finished-at="2020-05-15T04:41:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignupLinkTest -->
+        <test-method status="PASS" signature="verifyLoginTest()[pri:3, instance:com.facebook.qa.test.LoginPageTest@1bce4f0a]" name="verifyLoginTest" duration-ms="14344" started-at="2020-05-15T04:41:01Z" finished-at="2020-05-15T04:41:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginTest -->
+      </class> <!-- com.facebook.qa.test.LoginPageTest -->
+    </test> <!-- Regression Functional Test -->
+  </suite> <!-- FaceBook App Regression Test Suite -->
+</testng-results>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [FaceBook App Regression Test Suite]" parallel="classes">
+  <test thread-count="2" name="Regression Functional Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.facebook.qa.test.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.facebook.qa.test.HomePageTest -->
+    </classes>
+  </test> <!-- Regression Functional Test(failed) -->
+</suite> <!-- Failed suite [FaceBook App Regression Test Suite] -->
